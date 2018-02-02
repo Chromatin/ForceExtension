@@ -28,7 +28,7 @@ for Filename in filenames:
         continue
     Headers,Data = Tools.read_data(Filename)
     LogFile=Tools.read_log(Filename[:-4]+'.log')
-    Lc = float(Tools.find_param(LogFile,'L DNA (bp)')) # contour length (bp)
+    Lc = float(Tools.find_param(LogFile,'L DNA (bp)')) # contour length (bp) #parameters should not be initiliazed here
     p = float(Tools.find_param(LogFile,'p DNA (nm)') )  # persistence length (nm)p DNA (nm)
     S = float(Tools.find_param(LogFile,'S DNA (pN)') ) # stretch modulus (pN) S DNA (pN)
     k = float(Tools.find_param(LogFile,'k folded (pN/nm)') ) # Stiffness of the fiber, in pN/nm => k folded (pN/nm)
