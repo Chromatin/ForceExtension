@@ -14,6 +14,8 @@ import collections
 kT = 4.1 #(pN nm)
 L0 = 0.34 #(nm/bp)
 
+#test line to check github 
+
 def fiber(f, par = None):
     """  
     Calculate the extension of a nucleosome embeded in a folded chromatin fiber.
